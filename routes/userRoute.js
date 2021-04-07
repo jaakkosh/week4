@@ -2,9 +2,11 @@
 // userRoute
 const express = require('express');
 const userController = require('../controllers/userController');
+// const passport = require('passport');
 const router = express.Router();
 const { body } = require('express-validator');
 
+// passport.authenticate('jwt', {session: false})
 
 router.get('/', userController.user_list_get);
 router.post('/',
